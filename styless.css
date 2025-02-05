@@ -20,6 +20,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
+  .artwork-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;    
+    cursor: pointer;
+  }
   
   @media (max-width: 600px) {
     .grid-container {
