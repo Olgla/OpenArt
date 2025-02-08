@@ -1,0 +1,68 @@
+body, ul, .item, .artwork-item, h2 {
+  font-family: 'Alex Brush', cursive !important;
+}
+
+body {
+  background-color: #f2ecdc;
+  margin: 0;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+h1 {
+  font-size: 7vw;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+}
+
+
+.item {
+  background-color: #efe7d3;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: clamp(24px, 2vw, 64px);
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-radius: 32px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  min-width: 200px;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#artworks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 75%;
+  background-color: #f2ecdc;
+  border-radius: 8px;
+}
+
+.artwork-item {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.artwork-item:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
